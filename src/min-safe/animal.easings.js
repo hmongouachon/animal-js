@@ -421,13 +421,12 @@
               y: transform[1],
               z: transform[2]
           };
-      },
+      }, 
       get_sc3d: function(el) {
           const style = window.getComputedStyle(el)
           const matrix = style['transform'] || style.webkitTransform || style.mozTransform
           const matrixType = matrix.includes('3d') ? '3d' : '2d'
           const matrixValues = matrix.match(/matrix.*\((.+)\)/)[1].split(', ')
-
           if (matrixType === '3d') {
               return {
                   x: matrixValues[0],

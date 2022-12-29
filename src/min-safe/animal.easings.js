@@ -1,11 +1,11 @@
   /*!
    * Animal: Minimal javascript animation engine
    * (©) 2023 Hadrien Mongouachon
-   * Author URI: http://hmongouachon.com
+   * Author URI: http://hmongouachon.com/_playground/animal-js/
    * Version: 1.0.0 
    */ 
   var animal = function(obj, state, progress_) {
-      var opt = {
+      var opt = {  
           main_props: [
               'target', 'duration', 'easing', 'startTime', 'frame', 'percent', 'eprogress', 'progress',
               'time', 'run', 'delay', 'resume', 'rafID', 'count', 'loop', 'reverse', 'reverse_loop', 'autoplay', 'seek', 'onStart', 'onUpdate', 'onComplete'
@@ -193,41 +193,6 @@
           },
       };
       var prop = {
-          // render: function(target_, key, obj) {
-          //     var tra = '';
-          //     var sca = '';
-          //     var ske = '';
-          //     var rot = '';
-          //     var pers = '';
-          //     var transforms = '';
-          //     for (var key in obj) {
-          //         prop.css(target_, key, obj)
-          //         if (key == 'translate3d') {
-          //             prop.translate3d(target_, key, obj)
-          //             tra = 'translate3d(' + tx + 'px,' + ty + 'px,' + tz + 'px)';
-          //         }
-          //         if (key == 'scale3d') {
-          //             prop.scale3d(target_, key, obj)
-          //             sca = 'scale3d(' + sx + ',' + sy + ',' + sz + ')';
-          //         }
-          //         if (key == 'skew') {
-          //             prop.skew(target_, key, obj)
-          //             ske = 'skew(' + skx + 'deg,' + sky + 'deg)';
-          //         }
-          //         if (key == 'rotate3d') {
-          //             prop.rotate3d(target_, key, obj)
-          //             rot = 'rotate3d(' + rx + ','+ry+','+rz+','+ra+'deg)';
-          //         }
-          //         if (key == 'perspective') {
-          //             prop.perspective(target_, key, obj)
-          //             pers = 'perspective(' + per + 'px)';
-          //         }
-          //         if (key == 'translate3d' || key == 'scale3d' || key == 'skew' || key == 'rotate3d' || key == 'perspective') {
-          //             transforms = tra + sca + ske + rot + pers;
-          //             target_.style.transform = transforms;
-          //         }
-          //     }
-          // },
           translate3d: function(target_, key, obj) {
               if (key == "translate3d") {
                   var x = helper.tr_val(obj[key][0], tx, tx2);
@@ -326,10 +291,8 @@
                       return;
                   }
               }
-
           },
           css: function(target_, key, obj) {
-              // css props
               for (var i = 0; i < opt.css_props.length; i++) {
                   if (opt.css_props[i] == key) {
                       var val = obj[key];
@@ -343,7 +306,7 @@
                                   opt.unit = opt.units[i];
                                   break;
                               }
-                          }
+                          } 
                       }
                       if(key == 'opacity'){
                           opt.unit = '';
@@ -423,7 +386,6 @@
               v1 = param[0];
               v2 = param[1];
           } else {
-            // alert(param)
               v1 = 0;
               v2 = param;
           }
@@ -490,8 +452,6 @@
               return ("0" + parseInt(x).toString(16)).slice(-2);
           }
           return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
-
-          // r,g,b : return "#" + (1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1);
       },
       hex2rgb: function(hex) {
           return ['0x' + hex[1] + hex[2] | 0, '0x' + hex[3] + hex[4] | 0, '0x' + hex[5] + hex[6] | 0];

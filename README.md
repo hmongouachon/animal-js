@@ -1,6 +1,6 @@
-# animalJs : A minimal (8ko) javascript animation engine
+# animal : A minimal (8ko) javascript animation engine
 
-Full documentation and examples of animalJs [Here](http://hmongouachon.com/_playground/animal-js)  
+Full documentation and examples of animal [Here](http://hmongouachon.com/_playground/animal-js)  
 
 ## Main features :
 

@@ -1,4 +1,4 @@
-# Animal js : A minimal (8ko) javascript anmation engine
+# animal js : A minimal (8ko) javascript anmation engine
 
 Full documentation and examples [Animal](http://hmongouachon.com/_playground/animal-js)  
 

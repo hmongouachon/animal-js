@@ -14,5 +14,6 @@ Full documentation and examples [Here](http://hmongouachon.com/_playground/anima
  
 ### Disclaimer
 
-This is a personnal project and it(s not perfect.In case you want a complete, stable animation engine, just use the great anime.js by [Julien garnier](https://animejs.com/) 
+This is a personnal project and it(s not perfect.
+In case you want a complete, stable animation engine, just use the great anime.js by [Julien garnier](https://animejs.com/) 
 

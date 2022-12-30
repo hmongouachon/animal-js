@@ -5,11 +5,11 @@ Full documentation and examples [Animal](http://hmongouachon.com/_playground/ani
 ## Main features :
 
 * CSS and DOm selector and Javascript object
-* CSS properties
-* CSS transforms (translate3d, scale3d, rotate3d)
+* CSS properties (most used css properties for animation including color, backgroundColor ...)
+* CSS transforms (translate3d, scale3d, rotate3d, perpective)
 * Animation parameters (duration, delay, easings, loop, reverse, reverse loop, autoplay)
 * Animation controls (play / stop / resume / seek / fromTo)
-* Callbacks (onStart, onUpdate, onCOmplete
+* Callbacks (onStart, onUpdate, onComplete)
 * Helpers (random between 2 numbers, rgb to hex, hex to rgb ...)
  
 ### Disclaimer
